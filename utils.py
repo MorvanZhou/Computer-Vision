@@ -25,7 +25,10 @@ def save_model_structure(model: keras.Model, path=None):
     if path is None:
         path = "visual/{}/{}_structure.png".format(model.name, model.name)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    keras.utils.plot_model(model, show_shapes=True, expand_nested=True, dpi=150, to_file=path)
+    try:
+        keras.utils.plot_model(model, show_shapes=True, expand_nested=True, dpi=150, to_file=path)
+    except Exception as e:
+        print(e)
 
 
 def save_model_weights(model: keras.Model, path=None):
