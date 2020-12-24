@@ -18,7 +18,13 @@ All toy implementations are organised as following:
     - [Xception](#Xception)
     - [ShuffleNetV1](#ShuffleNetV1)
     - [ShuffleNetV2](#ShuffleNetV2)
-    
+
+# Installation
+```shell script
+$ git clone https://github.com/MorvanZhou/Computer-Vision
+$ cd Computer-Vision
+$ pip install -r requirements.txt
+```
 # ConvMechanism
 Convolution mechanism and feature map
 
